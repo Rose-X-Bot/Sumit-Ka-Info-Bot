@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: dual-info-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "8173036082:AAHlrHaHnaXKNbQl7v3wm-y0djPP6ezFEV0"
+    plan: free
